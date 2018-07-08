@@ -5,7 +5,7 @@
 # Site
 title: 大鹏的博客
 subtitle: hugh's blog
-description: share life
+description: share happy
 author: Hugh Xu
 language: zh-Hans
 timezone: Asia/Shanghai
@@ -34,7 +34,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -80,3 +80,12 @@ deploy:
   type: git
   repo: git@github.com:xuhugh/xuhugh.github.io.git
   branch: master
+
+# Extensions
+## Plugins: http://hexo.io/plugins/
+plugins: hexo-generate-feed
+#Feed Atom
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
